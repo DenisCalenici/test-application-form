@@ -1,0 +1,267 @@
+.app {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.steps {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.step-badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.step-badge.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.step-badge.done {
+  background: #e8f5ee;
+  border-color: #b7dcc8;
+  color: var(--success);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+}
+
+.region-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.region-btn {
+  text-align: left;
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: #faf8f5;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.region-btn:hover {
+  border-color: var(--accent);
+  background: #fff;
+}
+
+.region-btn.selected {
+  border-color: var(--accent);
+  background: #fff7f2;
+}
+
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.filters select,
+.filters input {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.material-list {
+  display: grid;
+  gap: 0.6rem;
+  max-height: 380px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.material-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: #faf8f5;
+  text-align: left;
+  width: 100%;
+}
+
+.material-item:hover {
+  border-color: var(--accent);
+}
+
+.material-item.selected {
+  border-color: var(--accent);
+  background: #fff7f2;
+}
+
+.material-item .name {
+  font-weight: 600;
+  display: block;
+}
+
+.material-item .meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.material-item .price {
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--accent);
+}
+
+.quantity-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quantity-row label {
+  font-weight: 600;
+}
+
+.quantity-row input {
+  width: 100px;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.order-summary dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.order-summary dt {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.order-summary dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.order-summary .total {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.retention-card {
+  background: linear-gradient(135deg, #fff7f2 0%, #f0f7f4 100%);
+  border: 2px solid #e8c4a8;
+}
+
+.retention-card h3 {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+}
+
+.retention-card p {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.btn {
+  padding: 0.7rem 1.25rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.success {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.success-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: #b42318;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.footer-note {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}

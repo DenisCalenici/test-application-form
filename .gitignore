@@ -1,0 +1,22 @@
+# Зависимости
+node_modules/
+
+# Сборка Vite (index-CPx3-CPD.js, index-ztkYQ_Vd.css и др.)
+dist/
+dist-ssr/
+
+# Кэш dev-сервера Vite
+.vite/
+
+# Логи
+*.log
+npm-debug.log*
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Секреты и локальные настройки
+.env
+.env.*
+!.env.example
